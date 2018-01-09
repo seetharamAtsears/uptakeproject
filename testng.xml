@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UpTake Navigations">
+
+	<parameter name="browser_window_width" value="900"><!--The height of 
+			the browser window to be used for the tests. -->
+	</parameter>
+
+	<parameter name="client_browser" value="firefox"><!--Browser to be used 
+			for the tests. Values could be firefox/chrome/safari/internet explorer -->
+	</parameter>
+
+	<parameter name="gecko_driver_path" value="C:\\Users\\sdasara\\Downloads\\geckodriver-v0.19.0-win64\\geckodriver.exe"><!--Gecko Driver is path is needed to execute firfox tests 
+			Values could be "C:\\Users\\sdasara\\Downloads\\geckodriver-v0.19.0-win64\\geckodriver.exe" -->
+	</parameter>
+
+	<parameter name="client_browserversion" value="xpff45"><!--The version 
+			of the browser to be used for the tests. -->
+	</parameter>
+	<test name="UpTake Navigations Tests">
+		<packages>
+				<package name="com.uptake" />
+	    </packages>
+		<classes>
+			<!-- Events Test -->
+			<class name="com.uptake.UpTakeTest" />
+			
+		</classes>
+	</test>
+
+</suite>
+ 
+ 
